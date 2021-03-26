@@ -11,7 +11,12 @@
 # chmod +x build-setup.sh
 # . build-setup.sh
 
-# Track dependencies
+# Wipe dependencies
+rm -rf device/xiaomi/syberia
+rm -rf device/xiaomi/nitrogen
+rm -rf device/xiaomi/ginkgo
+rm -rf vendor/xiaomi/ginkgo
+rm -rf vendor/miuicamera
 rm -rf hardware/qcom-caf/sm8150/display
 rm -rf vendor/qcom-opensource/display-commonsys-intf
 rm -rf hardware/qcom-caf/sm8150/audio
@@ -19,6 +24,13 @@ rm -rf hardware/qcom-caf/sm8150/media
 rm -rf hardware/qcom-caf/wlan
 rm -rf vendor/qcom/opensource/dataservices
 rm -rf vendor/qcom/opensource/data-ipa-cfg-mgr
+rm -rf packages/apps/FMRadio
+rm -rf vendor/qcom/opensource/libfmjni
+rm -rf vendor/qcom/opensource/fm-commonsys
+rm -rf vendor/qcom/opensource/power
+rm -rf vendor/support-lib
+
+# Track dependencies
 [ -d "vendor/syberia" ] && git clone https://github.com/TRINKET-ANDROID/device_xiaomi_syberia.git -b 11.0 device/xiaomi/syberia
 [ -d "vendor/nitrogen" ] && git clone https://github.com/TRINKET-ANDROID/device_xiaomi_nitrogen.git -b 11.0 device/xiaomi/nitrogen
 git clone https://github.com/TRINKET-ANDROID/device_xiaomi_ginkgo.git -b 11.0 device/xiaomi/ginkgo
@@ -39,3 +51,4 @@ git clone https://github.com/TRINKET-ANDROID/packages_apps_FMRadio.git -b 11.0 p
 git clone https://github.com/TRINKET-ANDROID/vendor_qcom_opensource_libfmjni.git -b 11.0 vendor/qcom/opensource/libfmjni
 git clone https://github.com/TRINKET-ANDROID/vendor_qcom_opensource_fm-commonsys.git -b 11.0 vendor/qcom/opensource/fm-commonsys
 git clone https://github.com/TRINKET-ANDROID/vendor_qcom_opensource_power.git -b 11.0 vendor/qcom/opensource/power
+git clone https://github.com/TRINKET-ANDROID/vendor_support-lib.git -b 11.0 vendor/support-lib
