@@ -11,9 +11,17 @@
 # chmod +x build-setup.sh
 # . build-setup.sh
 
-# Wipe dependencies
+# Wipe Syberia OS dependencies
 rm -rf device/xiaomi/syberia
+[ -d "vendor/syberia" ] && rm -rf device/qcom/sepolicy_vndr
+[ -d "vendor/syberia" ] && rm -rf device/google/redbull/powerstats
+
+# Wipe Nitrogen OS dependencies
 rm -rf device/xiaomi/nitrogen
+[ -d "vendor/nitrogen" ] && rm -rf device/qcom/sepolicy_vndr
+[ -d "vendor/nitrogen" ] && rm -rf packages/apps/NitrogenSettings
+
+# Wipe common dependencies
 rm -rf device/xiaomi/ginkgo
 rm -rf vendor/xiaomi/ginkgo
 rm -rf vendor/miuicamera
@@ -29,10 +37,23 @@ rm -rf vendor/qcom/opensource/libfmjni
 rm -rf vendor/qcom/opensource/fm-commonsys
 rm -rf vendor/qcom/opensource/power
 rm -rf vendor/support-lib
+rm -rf hardware/google/pixel/power-libperfmgr
+rm -rf hardware/google/pixel-sepolicy/power-libperfmgr
+rm -rf hardware/google/pixel/powerstats
+rm -rf hardware/google/pixel-sepolicy/powerstats
+rm -rf hardware/google/pixel/thermal
+rm -rf hardware/google/pixel-sepolicy/thermal
 
-# Track dependencies
+# Track Syberia OS dependencies
 [ -d "vendor/syberia" ] && git clone https://github.com/TRINKET-ANDROID/device_xiaomi_syberia.git -b 11.0 device/xiaomi/syberia
+[ -d "vendor/syberia" ] && git clone https://github.com/TRINKET-ANDROID/device_qcom_sepolicy_syberia.git -b 11.0 device/qcom/sepolicy_vndr
+
+# Track Nitrogen OS dependencies
 [ -d "vendor/nitrogen" ] && git clone https://github.com/TRINKET-ANDROID/device_xiaomi_nitrogen.git -b 11.0 device/xiaomi/nitrogen
+[ -d "vendor/nitrogen" ] && git clone https://github.com/TRINKET-ANDROID/device_qcom_sepolicy_nitrogen.git -b 11.0 device/qcom/sepolicy_vndr
+[ -d "vendor/nitrogen" ] && git clone https://github.com/TRINKET-ANDROID/packages_apps_NitrogenSettings.git -b 11.0 packages/apps/NitrogenSettings
+
+# Track common dependencies
 git clone https://github.com/TRINKET-ANDROID/device_xiaomi_ginkgo.git -b 11.0 device/xiaomi/ginkgo
 git clone https://github.com/TRINKET-ANDROID/vendor_xiaomi_ginkgo.git -b 11.0 vendor/xiaomi/ginkgo
 git clone https://github.com/TRINKET-ANDROID/vendor_miuicamera.git -b 11.0 vendor/miuicamera
