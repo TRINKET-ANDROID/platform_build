@@ -41,6 +41,7 @@ rm -rf hardware/google/pixel/power-libperfmgr
 rm -rf hardware/google/pixel-sepolicy/power-libperfmgr
 rm -rf hardware/google/pixel/powerstats
 rm -rf hardware/google/pixel-sepolicy/powerstats
+rm -rf hardware/google/pixel/pwrstats_util
 rm -rf hardware/google/pixel/thermal
 rm -rf hardware/google/pixel-sepolicy/thermal
 
