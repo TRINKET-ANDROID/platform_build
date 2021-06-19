@@ -67,6 +67,10 @@ git clone https://github.com/TRINKET-ANDROID/hardware_qcom-caf_common.git -b 11.
 git clone https://github.com/TRINKET-ANDROID/vendor_qcom_opensource_dataservices.git -b 11.0 vendor/qcom/opensource/dataservices
 git clone https://github.com/TRINKET-ANDROID/vendor_qcom_opensource_data-ipa-cfg-mgr.git -b 11.0 vendor/qcom/opensource/data-ipa-cfg-mgr
 git clone https://github.com/TRINKET-ANDROID/external_ant-wireless_antradio-library.git -b 11.0 external/ant-wireless/antradio-library
+git clone https://github.com/TRINKET-ANDROID/external_ant-wireless_ant_client -b 11.0 external/ant-wireless/ant/client
+git clone https://github.com/TRINKET-ANDROID/external_ant-wireless_ant_service -b 11.0 external/ant-wireless/ant/service
+git clone https://github.com/TRINKET-ANDROID/external_ant-wireless_hidl -b 11.0 external/ant-wireless/hidl
+git clone https://github.com/TRINKET-ANDROID/external_ant-wireless_ant_native -b 11.0 external/ant-wireless/ant/native
 git clone https://github.com/TRINKET-ANDROID/external_json-c.git -b 11.0 external/json-c
 git clone https://github.com/TRINKET-ANDROID/packages_resources_devicesettings.git -b 11.0 packages/resources/devicesettings
 git clone https://github.com/TRINKET-ANDROID/packages_apps_FMRadio.git -b 11.0 packages/apps/FMRadio
