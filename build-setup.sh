@@ -78,3 +78,4 @@ git clone https://github.com/TRINKET-ANDROID/vendor_qcom_opensource_libfmjni.git
 git clone https://github.com/TRINKET-ANDROID/vendor_qcom_opensource_fm-commonsys.git -b 11.0 vendor/qcom/opensource/fm-commonsys
 git clone https://github.com/TRINKET-ANDROID/vendor_qcom_opensource_power.git -b 11.0 vendor/qcom/opensource/power
 git clone https://github.com/TRINKET-ANDROID/vendor_support-lib.git -b 11.0 vendor/support-lib
+git clone https://github.com/TheHitMan7/android_kernel_sm6125.git -b 11.0 kernel/xiaomi/ginkgo
