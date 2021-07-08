@@ -53,6 +53,7 @@ rm -rf hardware/google/pixel-sepolicy/thermal
 [ -d "vendor/nitrogen" ] && git clone https://github.com/TRINKET-ANDROID/device_xiaomi_nitrogen.git -b 11.0 device/xiaomi/nitrogen
 [ -d "vendor/nitrogen" ] && git clone https://github.com/TRINKET-ANDROID/device_qcom_sepolicy_nitrogen.git -b 11.0 device/qcom/sepolicy_vndr
 [ -d "vendor/nitrogen" ] && git clone https://github.com/TRINKET-ANDROID/packages_apps_NitrogenSettings.git -b 11.0 packages/apps/NitrogenSettings
+[ -d "vendor/nitrogen" ] && git clone https://github.com/TRINKET-ANDROID/packages_apps_Matlog.git -b 11.0 packages/apps/Matlog
 
 # Track common dependencies
 git clone https://github.com/TRINKET-ANDROID/device_xiaomi_ginkgo.git -b 11.0 device/xiaomi/ginkgo
